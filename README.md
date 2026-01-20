@@ -121,6 +121,8 @@ npx hardhat run scripts/deploy.js
 - Executor
 - Guardian
 
+## Timelock Rationale
+Timelock prevents flash governance attacks and allows emergency review.
 
 ## Design Decisions
 
