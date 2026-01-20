@@ -12,6 +12,7 @@ contract DAOGovernance {
         Experimental,
         Operational
     }
+    
 
     enum ProposalState {
         Pending,
@@ -21,7 +22,7 @@ contract DAOGovernance {
         Executed,
         Canceled
     }
-    
+
 
     /* ========== STRUCTS ========== */
 
