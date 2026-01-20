@@ -107,6 +107,15 @@ npx hardhat run scripts/deploy.js
 
 - Execute proposal: execute(proposalId)
 
+## Proposal Lifecycle States
+- Pending
+- Active
+- Queued
+- Executed
+- Defeated
+- Canceled
+
+
 ## Design Decisions
 
 - Single-contract architecture chosen for simplicity
