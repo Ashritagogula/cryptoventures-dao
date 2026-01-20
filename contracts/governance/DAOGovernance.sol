@@ -42,6 +42,7 @@ contract DAOGovernance {
         uint256 eta;
         mapping(address => bool) hasVoted;
     }
+
     
 
     struct Receipt {
