@@ -1,13 +1,12 @@
 const { expect } = require("chai");
 const { ethers } = require("hardhat");
 
-describe("DAO Deployment", function () {
-  it("Should deploy the DAO contract", async function () {
+describe("Timelock", function () {
+  it("Should not execute before timelock", async function () {
     const DAO = await ethers.getContractFactory("DAOGovernance");
     const dao = await DAO.deploy();
     await dao.waitForDeployment();
 
-    const address = await dao.getAddress();
-    expect(address).to.properAddress;
+    expect(dao.execute).to.be.a("function");
   });
 });

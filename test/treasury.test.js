@@ -1,13 +1,14 @@
 const { expect } = require("chai");
 const { ethers } = require("hardhat");
 
-describe("DAO Deployment", function () {
-  it("Should deploy the DAO contract", async function () {
+describe("Treasury", function () {
+  it("Should accept ETH deposits", async function () {
     const DAO = await ethers.getContractFactory("DAOGovernance");
     const dao = await DAO.deploy();
     await dao.waitForDeployment();
 
-    const address = await dao.getAddress();
-    expect(address).to.properAddress;
+    await expect(
+      dao.deposit({ value: ethers.parseEther("2") })
+    ).to.not.be.reverted;
   });
 });
