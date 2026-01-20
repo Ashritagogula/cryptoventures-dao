@@ -1,4 +1,6 @@
 // SPDX-License-Identifier: MIT
+/// @notice Creates a new governance proposal
+
 pragma solidity ^0.8.20;
 
 contract DAOGovernance {
