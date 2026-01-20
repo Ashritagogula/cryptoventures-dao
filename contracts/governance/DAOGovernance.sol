@@ -21,6 +21,7 @@ contract DAOGovernance {
         Executed,
         Canceled
     }
+    
 
     /* ========== STRUCTS ========== */
 
