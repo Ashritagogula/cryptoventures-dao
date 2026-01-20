@@ -127,7 +127,6 @@ Timelock prevents flash governance attacks and allows emergency review.
 ## Delegation Model
 Delegation allows passive members to participate indirectly.
 
-
 ## Design Decisions
 
 - Single-contract architecture chosen for simplicity
