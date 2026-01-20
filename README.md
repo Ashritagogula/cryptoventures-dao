@@ -115,6 +115,12 @@ npx hardhat run scripts/deploy.js
 - Defeated
 - Canceled
 
+## Role Definitions
+- Proposer
+- Voter
+- Executor
+- Guardian
+
 
 ## Design Decisions
 
