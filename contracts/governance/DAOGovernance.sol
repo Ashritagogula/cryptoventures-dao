@@ -43,8 +43,6 @@ contract DAOGovernance {
         mapping(address => bool) hasVoted;
     }
 
-    
-
     struct Receipt {
         bool hasVoted;
         uint8 support;
